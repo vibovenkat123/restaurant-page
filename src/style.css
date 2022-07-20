@@ -10,13 +10,18 @@ a{
 body{
   font-family: 'Indie Flower';
 }
+ul{
+  list-style: none;
+}
 .svg-logo{
   width:100px;
 }
+
 nav.navbar{
   padding: 1em;
   display:flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -28,4 +33,14 @@ nav.navbar{
 .actual-title{
   font-size: 2em;
   padding-left: 20px;
+}
+.big-link{
+  font-size: 2.5em;
+}
+.links{
+  text-align: center;
+}
+.links li{
+  display: inline;
+  margin-left: 50px;
 }
