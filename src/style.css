@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 *{
   margin:0;
   padding:0;
@@ -30,7 +30,7 @@ nav.navbar{
   flex-direction: row-reverse;
   align-items: center;
 }
-.actual-title{
+.text-head{
   font-size: 2em;
   padding-left: 20px;
 }
@@ -44,6 +44,32 @@ nav.navbar{
   display: inline;
   margin-left: 50px;
 }
+.img-home img{
+  height: 80vh;
+}
 .home{
   display: flex;
+}
+.box-home{
+  background-color: lightgray;
+  border-radius: 15px;
+  text-align: center;
+  padding:2em;
+  width:500px;
+}
+.left-side .container{
+  align-items: center;
+  text-align: center;
+  width: 70vw;
+}
+.container-box{
+  display:flex;
+  justify-content: center;
+  padding:5em;
+}
+.credits a{
+  text-decoration:underline;
+}
+.credits{
+  font-size: 2em;
 }
