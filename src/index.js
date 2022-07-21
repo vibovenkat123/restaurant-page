@@ -1,1 +1,4 @@
-console.log('works');
+import './style.css'
+function main(){
+  
+}
