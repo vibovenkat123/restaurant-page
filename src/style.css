@@ -10,6 +10,10 @@ a {
   color: black;
 }
 
+.active-tab {
+  border-bottom: 10px solid pink;
+}
+
 body {
   font-family: 'Indie Flower';
   overflow: hidden;
@@ -61,6 +65,7 @@ nav.navbar {
 
 .home {
   display: flex;
+  position: fixed;
 }
 
 .box-home {

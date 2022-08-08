@@ -39,10 +39,14 @@ function createLinks(nav){
     let link = document.createElement('a');
     link.href = '#';
     link.classList.add(linkArray[i]);
+    link.classList.add('Tab')
     let span = document.createElement('span');
     span.classList.add('big-link');
     span.textContent = linkArray[i];
     link.appendChild(span);
+    if (linkArray[i] == 'Home'){
+      link.firstChild.classList.add('active-tab')
+    }
     listElement.appendChild(link)
     list.appendChild(listElement);
   }
