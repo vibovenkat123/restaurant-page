@@ -1,10 +1,6 @@
 import './style.css'
 const content = document.getElementById('content');
-function main(){
-  createNav();
-  document.body.appendChild(content);
-}
-function createNav(){
+export function createNav(){
   const nav =  document.createElement('nav');
   nav.classList.add('navbar');
   createTitle(nav);
@@ -32,5 +28,4 @@ function createTitle(nav){
   divTitle.appendChild(a);
   nav.appendChild(divTitle);
   content.appendChild(nav);
-} 
-main();
+}
