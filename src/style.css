@@ -1,75 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-*{
-  margin:0;
-  padding:0;
+
+* {
+  margin: 0;
+  padding: 0;
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
-body{
+
+body {
   font-family: 'Indie Flower';
-}
-ul{
-  list-style: none;
-}
-.svg-logo{
-  width:100px;
+  overflow: hidden;
 }
 
-nav.navbar{
+ul {
+  list-style: none;
+}
+
+.svg-logo {
+  width: 100px;
+}
+
+nav.navbar {
   padding: 1em;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.title{
+.title {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
-.text-head{
+
+.text-head {
   font-size: 2em;
   padding-left: 20px;
 }
-.big-link{
+
+.big-link {
   font-size: 2.5em;
 }
-.links{
+
+.links {
   text-align: center;
 }
-.links li{
+
+.links li {
   display: inline;
   margin-left: 50px;
 }
-.img-home img{
+
+.img-home img {
   height: 80vh;
 }
-.home{
+
+.home {
   display: flex;
 }
-.box-home{
+
+.box-home {
   background-color: lightgray;
   border-radius: 15px;
   text-align: center;
-  padding:2em;
-  width:500px;
+  padding: 2em;
+  width: 500px;
 }
-.left-side .container{
+
+.left-side .container {
   align-items: center;
   text-align: center;
   width: 70vw;
 }
-.container-box{
-  display:flex;
+
+.container-box {
+  display: flex;
   justify-content: center;
-  padding:5em;
+  padding: 5em;
 }
-.credits a{
-  text-decoration:underline;
+
+.credits a {
+  text-decoration: underline;
 }
-.credits{
+
+.credits {
   font-size: 2em;
 }

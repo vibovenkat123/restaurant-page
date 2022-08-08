@@ -1,4 +1,5 @@
-import './style.css'
+import './style.css';
+import tooth from './img/tooth.svg';
 export function createNav(){
   const nav =  document.createElement('nav');
   nav.classList.add('navbar');
@@ -15,7 +16,7 @@ function createTitle(nav){
   const imageTitle = document.createElement('div');
   imageTitle.classList.add('svg-logo');
   const svgTooth = new Image();
-  svgTooth.src = "https://www.svgrepo.com/show/257985/tooth.svg";
+  svgTooth.src = tooth;
   imageTitle.appendChild(svgTooth);
   const actualTitle = document.createElement('div');
   const h1 = document.createElement('h1')
