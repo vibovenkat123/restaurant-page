@@ -1,9 +1,10 @@
 import './style.css'
-const content = document.getElementById('content');
 export function createNav(){
   const nav =  document.createElement('nav');
   nav.classList.add('navbar');
   createTitle(nav);
+  createLinks(nav);
+  return nav;
 }
 function createTitle(nav){
   const divTitle = document.createElement('div');
@@ -15,7 +16,6 @@ function createTitle(nav){
   imageTitle.classList.add('svg-logo');
   const svgTooth = new Image();
   svgTooth.src = "https://www.svgrepo.com/show/257985/tooth.svg";
-  console.log(svgTooth.src);
   imageTitle.appendChild(svgTooth);
   const actualTitle = document.createElement('div');
   const h1 = document.createElement('h1')
@@ -27,5 +27,24 @@ function createTitle(nav){
   a.appendChild(imageTitle);
   divTitle.appendChild(a);
   nav.appendChild(divTitle);
-  content.appendChild(nav);
 }
+function createLinks(nav){
+  const linkDiv = document.createElement('div');
+  linkDiv.classList.add('links');
+  const list = document.createElement('ul');
+  const linkArray = ['Home', 'Menu', 'Contact'];
+  for (let i = 0; i<3; i++){
+    let listElement = document.createElement('li');
+    let link = document.createElement('a');
+    link.href = '#';
+    link.classList.add(linkArray[i]);
+    let span = document.createElement('span');
+    span.classList.add('big-link');
+    span.textContent = linkArray[i];
+    link.appendChild(span);
+    listElement.appendChild(link)
+    list.appendChild(listElement);
+  }
+  linkDiv.appendChild(list);
+  nav.appendChild(linkDiv);
+} 

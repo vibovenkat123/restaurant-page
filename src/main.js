@@ -1,6 +1,7 @@
 import { createNav } from "./navbar";
+const content = document.getElementById('content');
 function main(){
-  createNav();
+  content.appendChild(createNav());
   document.body.appendChild(content);
 }
 main();
