@@ -71,7 +71,7 @@ nav.navbar {
 .menu {
   width: 100vw;
   padding: 5em;
-  height: 100vh;
+  height: 120vh;
   background-color: lightblue;
   display: none;
   justify-content: center;
@@ -110,8 +110,21 @@ nav.navbar {
 }
 
 .grid-container {
+  padding: 5em;
   display: grid;
   background-color: #c8a2c840;
   height: 100vh;
-  width: 35vw;
+  width: 45vw;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5em
+}
+
+.grid-element {
+  padding: 2em;
+  border-radius: 25px;
+  background-color: #c8a2c8a5;
+}
+
+.grid-element h1 {
+  font-size: 1.5em;
 }
