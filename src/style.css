@@ -18,7 +18,15 @@ body {
   font-family: 'Indie Flower';
   overflow: hidden;
 }
-
+.contact{
+  display:none;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+  background-image: url('./img/ice-cream-falling.jpeg');
+  background-size: 100%;
+}
 ul {
   list-style: none;
 }
@@ -72,7 +80,8 @@ nav.navbar {
   width: 100vw;
   padding: 5em;
   height: 120vh;
-  background-color: lightblue;
+  background-image: url('./img/ice-cream-falling.jpeg');
+  background-size: 95%;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -132,4 +141,9 @@ nav.navbar {
 
 .menu .credits {
   margin-top: 50px;
+  color: white;
+}
+
+.menu .credits a {
+  color: white
 }

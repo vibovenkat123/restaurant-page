@@ -3,6 +3,8 @@ import { createHome } from "./home";
 import { createMenu } from "./menu";
 import { homeDiv } from "./home";
 import { menuDiv } from "./menu";
+import {contactDiv} from "./contact";
+import { createContactDiv } from "./contact"
 const content = document.getElementById('content');
 const tabs = document.getElementsByClassName('Tab');
 function main(){
@@ -10,6 +12,7 @@ function main(){
   content.appendChild(createHome());
   homeDiv.classList.add('show')
   content.appendChild(createMenu());
+  content.appendChild(createContactDiv());
   document.body.appendChild(content);
 }
 main();
@@ -20,6 +23,7 @@ function removeClasses(){
   }
   homeDiv.classList.remove('show');
   menuDiv.classList.remove('show');
+  contactDiv.classList.remove('show')
 }
 for (let tab=0; tab < tabs.length; tab++){
   tabs[tab].addEventListener('click', (e)=>{
@@ -31,6 +35,9 @@ for (let tab=0; tab < tabs.length; tab++){
     else if (e.target.textContent == 'Menu'){
       menuDiv.classList.add('show');
       document.body.style.overflow = 'auto';
+    }
+    else if (e.target.textContent == 'Contact'){
+     contactDiv.classList.add('show');
     }
   })
 }
