@@ -23,9 +23,16 @@ body {
   justify-content: center;
   align-items: center;
   width:100vw;
-  height:100vh;
+  height:83vh;
   background-image: url('./img/ice-cream-falling.jpeg');
   background-size: 100%;
+}
+.info-box{
+  border-radius:25px;
+  background-color: #50c878;
+  opacity: 0.8;
+  width:35vw;
+  height:35vh;
 }
 ul {
   list-style: none;
