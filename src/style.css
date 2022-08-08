@@ -74,7 +74,8 @@ nav.navbar {
   height: 120vh;
   background-color: lightblue;
   display: none;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .show {
@@ -127,4 +128,8 @@ nav.navbar {
 
 .grid-element h1 {
   font-size: 1.5em;
+}
+
+.menu .credits {
+  margin-top: 50px;
 }
