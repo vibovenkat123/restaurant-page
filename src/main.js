@@ -1,23 +1,36 @@
 import { createNav } from "./navbar";
 import { createHome } from "./home";
+import { createMenu } from "./menu";
+import { homeDiv } from "./home";
+import { menuDiv } from "./menu";
 const content = document.getElementById('content');
 const tabs = document.getElementsByClassName('Tab');
 function main(){
   content.appendChild(createNav());
   content.appendChild(createHome());
+  homeDiv.classList.add('show')
+  content.appendChild(createMenu());
   document.body.appendChild(content);
 }
 main();
-function removeTabClass(){
+console.log(menuDiv)
+function removeClasses(){
   for (let tab=0; tab < tabs.length; tab++){
-    tabs[tab].firstChild.classList.remove('active-tab')
+    tabs[tab].firstChild.classList.remove('active-tab');
   }
+  homeDiv.classList.remove('show');
+  menuDiv.classList.remove('show');
 }
 for (let tab=0; tab < tabs.length; tab++){
   tabs[tab].addEventListener('click', (e)=>{
-    for (let tab=0; tab < tabs.length; tab++){
-      tabs[tab].firstChild.classList.remove('active-tab')
+    removeClasses()
+    e.target.classList.add('active-tab');
+    if (e.target.textContent == 'Home'){
+      homeDiv.classList.add('show')
     }
-    e.target.classList.add('active-tab')
+    else if (e.target.textContent == 'Menu'){
+      menuDiv.classList.add('show');
+      document.body.style.overflow = 'auto';
+    }
   })
 }

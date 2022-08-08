@@ -1,11 +1,13 @@
 import strawberryIceCream from './img/strawberry-icecream.avif'
+let homeDiv;
 export function createHome(){
-  const homeDiv = document.createElement('div');
+  homeDiv = document.createElement('div');
   homeDiv.classList.add('home');
   createImage(homeDiv);
   createLeftSide(homeDiv)
   return homeDiv; 
 }
+export {homeDiv}
 function createImage(home){
   const imageHomeDiv = document.createElement('div');
   imageHomeDiv.classList.add('img-home');

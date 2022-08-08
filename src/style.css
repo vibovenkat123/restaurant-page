@@ -64,8 +64,21 @@ nav.navbar {
 }
 
 .home {
-  display: flex;
+  display: none;
   position: fixed;
+}
+
+.menu {
+  width: 100vw;
+  padding: 5em;
+  height: 100vh;
+  background-color: lightblue;
+  display: none;
+  justify-content: center;
+}
+
+.show {
+  display: flex;
 }
 
 .box-home {
@@ -94,4 +107,11 @@ nav.navbar {
 
 .credits {
   font-size: 2em;
+}
+
+.grid-container {
+  display: grid;
+  background-color: #c8a2c840;
+  height: 100vh;
+  width: 35vw;
 }
