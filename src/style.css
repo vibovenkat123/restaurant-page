@@ -18,30 +18,35 @@ body {
   font-family: 'Indie Flower';
   overflow: hidden;
 }
-.contact{
-  display:none;
+
+.contact {
+  display: none;
   justify-content: center;
   align-items: center;
-  width:100vw;
-  height:83vh;
+  width: 100vw;
+  height: 83vh;
   background-image: url('./img/ice-cream-falling.jpeg');
   background-size: 100%;
 }
-.info-box{
-  border-radius:25px;
+
+.info-box {
+  border-radius: 25px;
   background-color: #50c878;
   opacity: 0.8;
-  width:35vw;
-  height:35vh;
+  width: 35vw;
+  height: 35vh;
   padding: 5em;
   text-align: center;
 }
-.info-box > * {
+
+.info-box>* {
   margin-bottom: 2em;
 }
-.info-box-text{
-  font-size:2em;
+
+.info-box-text {
+  font-size: 2em;
 }
+
 ul {
   list-style: none;
 }
@@ -93,13 +98,13 @@ nav.navbar {
 
 .menu {
   width: 100vw;
-  padding: 5em;
   height: 120vh;
   background-image: url('./img/ice-cream-falling.jpeg');
-  background-size: 95%;
+  background-size: 150%;
   display: none;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .show {
@@ -110,7 +115,7 @@ nav.navbar {
   background-color: lightgray;
   border-radius: 15px;
   text-align: center;
-  padding: 2em;
+  padding: 0.3em;
   width: 500px;
 }
 
@@ -123,7 +128,7 @@ nav.navbar {
 .container-box {
   display: flex;
   justify-content: center;
-  padding: 5em;
+  padding: 2em;
 }
 
 .credits a {
@@ -161,4 +166,124 @@ nav.navbar {
 
 .menu .credits a {
   color: white
+}
+
+@media screen and (max-width: 1521px) {
+  .img-home {
+    display: none;
+  }
+
+  .grid-container {
+    width: 100vw;
+  }
+
+  .home .credits {
+    display: none;
+  }
+
+  .home {
+    width: 100vw;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1292px) {
+  .container-box {
+    padding: 5em;
+  }
+
+  .home .text-head {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 1198px) {
+  .info-box-text {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  .grid-element {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .grid-element h1 {
+    font-size: 1.2em;
+  }
+
+  .info-box-text {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 804px) {
+  .container-box {
+    padding: 2em;
+  }
+
+  .info-box-text {
+    font-size: 1.5em;
+  }
+
+  .grid-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .grid-element h1 {
+    font-size: 0.9em;
+  }
+
+  .grid-element p {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  .home .text-head {
+    font-size: 1em;
+  }
+
+  .grid-container {
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .home .text-head {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .home .text-head {
+    display: none;
+  }
+
+  .container-box {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .container-box {
+    display: none;
+  }
+
+  .img-home {
+    display: inline-flex;
+    width: 100vw;
+    justify-self: center;
+  }
 }
